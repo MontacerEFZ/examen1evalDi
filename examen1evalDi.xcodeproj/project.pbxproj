@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,8 @@
 		1B432A972B0602F600968134 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B432A952B0602F600968134 /* LaunchScreen.storyboard */; };
 		1B432AA22B0602F700968134 /* examen1evalDiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B432AA12B0602F700968134 /* examen1evalDiTests.swift */; };
 		1B432AAD2B0602F700968134 /* examen1evalDiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B432AAC2B0602F700968134 /* examen1evalDiUITests.swift */; };
+		1B432AC62B0606FA00968134 /* ResumenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B432AC52B0606FA00968134 /* ResumenViewController.swift */; };
+		1B432ACC2B06131F00968134 /* Toast in Frameworks */ = {isa = PBXBuildFile; productRef = 1B432ACB2B06131F00968134 /* Toast */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		1B432AA82B0602F700968134 /* examen1evalDiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = examen1evalDiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B432AAC2B0602F700968134 /* examen1evalDiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = examen1evalDiUITests.swift; sourceTree = "<group>"; };
 		1B432AAE2B0602F700968134 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1B432AC52B0606FA00968134 /* ResumenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumenViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B432ACC2B06131F00968134 /* Toast in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -106,6 +110,7 @@
 				1B432A932B0602F600968134 /* Assets.xcassets */,
 				1B432A952B0602F600968134 /* LaunchScreen.storyboard */,
 				1B432A982B0602F600968134 /* Info.plist */,
+				1B432AC52B0606FA00968134 /* ResumenViewController.swift */,
 			);
 			path = examen1evalDi;
 			sourceTree = "<group>";
@@ -144,6 +149,9 @@
 			dependencies = (
 			);
 			name = examen1evalDi;
+			packageProductDependencies = (
+				1B432ACB2B06131F00968134 /* Toast */,
+			);
 			productName = examen1evalDi;
 			productReference = 1B432A872B0602F600968134 /* examen1evalDi.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +223,9 @@
 				Base,
 			);
 			mainGroup = 1B432A7E2B0602F600968134;
+			packageReferences = (
+				1B432ACA2B06131F00968134 /* XCRemoteSwiftPackageReference "Toast-Swift" */,
+			);
 			productRefGroup = 1B432A882B0602F600968134 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B432AC62B0606FA00968134 /* ResumenViewController.swift in Sources */,
 				1B432A8F2B0602F600968134 /* ViewController.swift in Sources */,
 				1B432A8B2B0602F600968134 /* AppDelegate.swift in Sources */,
 				1B432A8D2B0602F600968134 /* SceneDelegate.swift in Sources */,
@@ -587,6 +599,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1B432ACA2B06131F00968134 /* XCRemoteSwiftPackageReference "Toast-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/scalessec/Toast-Swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1B432ACB2B06131F00968134 /* Toast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1B432ACA2B06131F00968134 /* XCRemoteSwiftPackageReference "Toast-Swift" */;
+			productName = Toast;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1B432A7F2B0602F600968134 /* Project object */;
 }
